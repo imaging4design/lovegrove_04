@@ -39,24 +39,6 @@
 | STRUCTURE
 |-----------------------------------------------------------------------------------------------------------------
 */
-
-.logo-large {
-	position: absolute;
-	font-size: 20px;
-	background: #C00;
-	padding:10px 30px;
-	transform: skew(-25deg, 0deg);
-	display: block;
-	height: 44px;
-	top: 0px;
-	left: 0px;
-	border-right: solid 10px #FFF;
-	a {
-		transform: skew(50deg, 0deg);
-		color: #FFF;
-	}
-}
-
 body {
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
@@ -64,13 +46,6 @@ body {
 	line-height: 1;
 	font-weight: 300;
 	padding-top: 30px;
-}
-
-a,
-a:hover,
-a:active {
-	color: #777;
-	text-decoration: none;
 }
 .frame {
 	position: relative;
@@ -120,7 +95,6 @@ a:active {
 	background: #FFF;
 }
 
-
 .icon-search {
 	position: absolute;
 	color: #333;
@@ -137,20 +111,28 @@ a:active {
 	background: none;
 }
 
-.box {
-	position: relative;
-	height: 500px;
-	margin-top: 40px;
-	padding: 20px;
-	overflow: hidden;
-	background: rgba(0,0,0, .1);
+.logo-large {
+	position: absolute;
+	font-size: 20px;
+	background: #C00;
+	padding:10px 30px;
+	transform: skew(-25deg, 0deg);
+	display: block;
+	height: 44px;
+	top: 0px;
+	left: 0px;
+	border-right: solid 10px #FFF;
+	a {
+		transform: skew(50deg, 0deg);
+		color: #FFF;
+	}
 }
 .band-nav {
 	position: fixed;
+	color: #333;
 	top:0;
 	width: 100%;
 	height: 45px;
-	color: #333;
 	background: #000;
 	padding-top: 14px;
 	border-bottom: solid 1px #EBEBEB;
@@ -160,18 +142,24 @@ a:active {
 		padding-left: 120px;
 	}
 }
-.band-white {
-	background: #FFF;
+.band-all {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+.band-white {
+	.band-all;
+	background: #FFF;
+}
 .band-red {
+	.band-all;
 	background: @colOrange01;
 }
 .band-grey {
+	.band-all;
 	background: @colGreyDark02;
 }
 .band-cyan {
+	.band-all;
 	background: @colCyan01;
 }
 .img-bottom {
@@ -190,92 +178,70 @@ a:active {
 	}
 }
 .red {
-	.box;
 	background: @colRed01;
 }
 .orange {
-	.box;
 	background: @colOrange01;
 }
 .yellow {
-	.box;
 	background: @colYellow01;
 }
 .green {
-	.box;
 	background: @colGreen01;
 }
 .cyan {
-	.box;
 	background: @colCyan01;
 }
 .blue {
-	.box;
 	background: @colBlue01;
 }
 .purple {
-	.box;
 	background: @colPurple01;
 }
 .magenta {
-	.box;
 	background: @colMagenta01;
 }
 .greyLight {
-	.box;
 	background: @colGreyLight01;
 }
 .greyMed {
-	.box;
 	background: @colGreyMed01;
 }
 .greyDark {
-	.box;
 	background: @colGreyDark01;
 }
 
 .red2 {
-	.box;
 	background: @colRed02;
 }
 .orange2 {
-	.box;
 	background: @colOrange02;
 }
 .yellow2 {
-	.box;
 	background: @colYellow02;
 }
 .green2 {
-	.box;
 	background: @colGreen02;
 }
 .cyan2 {
-	.box;
 	background: @colCyan02;
 }
 .blue2 {
-	.box;
 	background: @colBlue02;
 }
 .purple2 {
-	.box;
 	background: @colPurple02;
 }
 .magenta2 {
-	.box;
 	background: @colMagenta02;
 }
 .greyLight2 {
-	.box;
 	background: @colGreyLight02;
 }
 .greyMed2 {
-	.box;
 	background: @colGreyMed02;
 }
 .greyDark2 {
-	.box;
 	background: @colGreyDark02;
 }
 
@@ -427,9 +393,12 @@ nav:hover #menuToggle span {
 | LINKS
 |-----------------------------------------------------------------------------------------------------------------
 */
-a:active,
-a:focus {
+a,
+a:hover,
+a:active {
+	color: #777;
 	outline: none;
+	text-decoration: none;
 }
 
 /*
@@ -477,7 +446,7 @@ a:focus {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	body {
-		padding-top: 50px;
+		padding-top: 60px;
 	}
 	.logo-large {
 		height: 59px;
