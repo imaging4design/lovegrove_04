@@ -33,16 +33,37 @@
 @colGreyDark01: #656D78;
 @colGreyDark02: #434A54;
 
+
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | STRUCTURE
 |-----------------------------------------------------------------------------------------------------------------
 */
+
+.logo-large {
+	position: absolute;
+	font-size: 20px;
+	background: #C00;
+	padding:10px 30px;
+	transform: skew(-25deg, 0deg);
+	display: block;
+	height: 44px;
+	top: 0px;
+	left: 0px;
+	border-right: solid 10px #FFF;
+	a {
+		transform: skew(50deg, 0deg);
+		color: #FFF;
+	}
+}
+
 body {
-	color: #FFF;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1;
 	font-weight: 300;
+	padding-top: 30px;
 }
 
 a,
@@ -64,7 +85,6 @@ a:active {
 .frame-content {
 	position: relative;
 	padding: 10px 20px;
-	border-top: solid 1px rgba(150,150,150, 0.2);
 	&:hover {
 		background: #333;
 		color: #FFF;
@@ -79,16 +99,27 @@ a:active {
 	height:100%;
 	width:100%;
 	padding: 20px;
-	color: #FFF;
-	background: #000;
+	color: #333;
+	background: #FFF;
 	opacity: 0;
+	p {
+		font-size: 14px;
+		line-height: 1.4;
+	}
 	&:hover {
 		height:100%;
 		opacity: .85;
 		cursor: pointer;
 	}
 	transition: all .4s cubic-bezier(.17,.67,.89,.6);
+
 }
+
+.frame-hidden:hover + a .frame-content {
+	color: #EEE;
+	background: #FFF;
+}
+
 
 .icon-search {
 	position: absolute;
@@ -96,10 +127,15 @@ a:active {
 	background: #FFF;
 	top:0;
 	right:0;
-	padding: 10px 15px;
+	padding: 10px 12px;
 	opacity: .5;
 }
 
+.frame:hover > .icon-search {
+	opacity: 0;
+	display: none;
+	background: none;
+}
 
 .box {
 	position: relative;
@@ -109,13 +145,28 @@ a:active {
 	overflow: hidden;
 	background: rgba(0,0,0, .1);
 }
+.band-nav {
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 45px;
+	color: #333;
+	background: #000;
+	padding-top: 14px;
+	border-bottom: solid 1px #EBEBEB;
+	z-index: 1;
+	p {
+		color: #FFF;
+		padding-left: 120px;
+	}
+}
 .band-white {
 	background: #FFF;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 .band-red {
-	background: @colRed01;
+	background: @colOrange01;
 }
 .band-grey {
 	background: @colGreyDark02;
@@ -227,6 +278,132 @@ a:active {
 	.box;
 	background: @colGreyDark02;
 }
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| OFF-CANVAS
+|-----------------------------------------------------------------------------------------------------------------
+*/
+nav {
+	position: fixed;
+	background: #000;
+	width: 44px;
+	height: 44px;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	transition: all .2s linear;
+	&:hover {
+		background: @colRed01;
+	}
+}
+
+nav:hover #menuToggle span {
+	background: #FFF;
+}
+
+#menuToggle {
+	display: block;
+	position: fixed;
+	top: 15px;
+	right: 12px;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#menuToggle input {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -22px;
+	right: -15px;
+	cursor: pointer;
+	opacity: 0; /* hide this */
+	z-index: 2; /* and place it over the hamburger */
+}
+
+/* Just a quick hamburger */
+#menuToggle span {
+	display: block;
+	width: 21px;
+	height: 3px;
+	margin-bottom: 3px;
+	position: relative;
+	background: #AAA;
+	border-radius: 3px;
+	z-index: 1;
+	transform-origin: 4px 0px;
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),  opacity 0.55s ease;
+}
+
+#menuToggle span:first-child { 
+	transform-origin: 0% 0%; 
+}
+
+#menuToggle span:nth-last-child(2) { 
+	transform-origin: 0% 100%; 
+}
+
+/* Transform all the slices of hamburger into a crossmark */
+#menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(4px, -2px);
+	background: #FFF;
+}
+
+/* But let's hide the middle one */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* Ohyeah and the last one should go the other direction */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+	opacity: 1;
+	transform: rotate(-45deg) translate(3px, 4px);
+}
+
+/* Make this absolute positioned at the top left of the screen */
+#menu {
+	position: fixed;
+	width: 300px;
+	margin: -102px 0px 0px -150px;
+	padding: 125px 0 50px;
+	background: #111;
+	list-style-type: none;
+	transform-origin: 0% 0%;
+	transform: translate(100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu a:hover {
+	color: #FFF;
+}
+
+#menu li {
+	padding: 10px 40px;
+	font-size: 18px;
+}
+
+#menu .fa {
+	font-size: 13px;
+}
+
+#menu a li {
+    &:hover {
+		background: #444;
+		transition: all .3s linear;
+	}
+}
+
+/* And let's fade it in from the left */
+#menuToggle input:checked ~ ul {
+	transform: scale(1.0, 1.0);
+	opacity: 1;
+}
+
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | TYPOGRAPHY
@@ -250,7 +427,10 @@ a:active {
 | LINKS
 |-----------------------------------------------------------------------------------------------------------------
 */
-
+a:active,
+a:focus {
+	outline: none;
+}
 
 /*
 |-----------------------------------------------------------------------------------------------------------------
@@ -296,7 +476,33 @@ a:active {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	
+	body {
+		padding-top: 50px;
+	}
+	.logo-large {
+		height: 59px;
+	}
+	.band-nav {
+		height: 60px;
+		padding-top: 22px;
+	}
+	nav {
+		width: 59px;
+		height: 59px;
+	}
+	#menuToggle {
+		top: 20px;
+		right: 14px;
+	}
+	#menuToggle span {
+		width: 30px;
+		height: 4px;
+		margin-bottom: 5px;
+	}
+	#menuToggle input {
+		top: -18px;
+		right: -10px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */

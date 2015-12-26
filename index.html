@@ -11,7 +11,11 @@
 	<!-- BOOTSTRAP Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	<!-- FONTAWESOME -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- GOOGLE FONTS Open Sans -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic,600italic,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/styles.css">
@@ -24,6 +28,33 @@
 
 	<!-- Site application -->
 
+	<nav>
+		<div id="menuToggle">
+			<input type="checkbox" id="myCheckbox">
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+				<a href="#"><li><i class="fa fa-desktop"></i> Home</li></a>
+				<a href="#"><li><i class="fa fa-desktop"></i> About</li></a>
+				<a href="#"><li><i class="fa fa-desktop"></i> Websites</li></a>
+				<a href="#"><li><i class="fa fa-desktop"></i> Graphics</li></a>
+				<a href="#"><li><i class="fa fa-desktop"></i> Logos</li></a>
+				<a href="#"><li><i class="fa fa-desktop"></i> Contact</li></a>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="band-nav">
+		<div class="logo-large">
+			<a href="#">LD</a>
+		</div>
+		<p>Lovegrove Design</p>
+	</div><!--ENDS band-->
+
+
+
 	<div class="band-white">
 		<div class="container">
 			<div class="row">
@@ -31,13 +62,13 @@
 				<div class="col-md-4">
 					<div class="frame">
 						<div class="icon-search"><i class="fa fa-search"></i></div>
-						<img src="img/web/test.png" class="img-responsive">
+						<img src="img/web/show_timesheet.png" class="img-responsive">
 						<div class="frame-hidden">
 							<p>Hello this is hidden text and it was quite the mission to get it to pop up above the bottom band ... that's the joy of CSS!</p>
 							<button class="btn btn-default">Button</button>
 						</div>
 						<a href="http://www.google.co.nz"><div class="frame-content">
-							<h3> 1. Login Screen</h3>
+							<h4> 1. Login Screen</h4>
 							<p>This is content text to fill the box - just for show ...</p>
 						</div></a>
 					</div>
@@ -46,30 +77,30 @@
 				<div class="col-md-4">
 					<div class="frame">
 						<div class="icon-search"><i class="fa fa-search"></i></div>
-						<img src="img/web/test.png" class="img-responsive">
+						<img src="img/web/show_anz.png" class="img-responsive">
 						<div class="frame-hidden">
 							<p>Hello this is hidden text and it was quite the mission to get it to pop up above the bottom band ... that's the joy of CSS!</p>
 							<button class="btn btn-default">Button</button>
 						</div>
-						<div class="frame-content">
-							<h3>2. Client List</h3>
+						<a href="http://www.google.co.nz"><div class="frame-content">
+							<h4> 1. Login Screen</h4>
 							<p>This is content text to fill the box - just for show ...</p>
-						</div>
+						</div></a>
 					</div>
 				</div>
 
 				<div class="col-md-4">
 					<div class="frame">
 						<div class="icon-search"><i class="fa fa-search"></i></div>
-						<img src="img/web/test.png" class="img-responsive">
+						<img src="img/web/show_track.png" class="img-responsive">
 						<div class="frame-hidden">
 							<p>Hello this is hidden text and it was quite the mission to get it to pop up above the bottom band ... that's the joy of CSS!</p>
 							<button class="btn btn-default">Button</button>
 						</div>
-						<div class="frame-content">
-							<h3>3. Client List</h3>
+						<a href="http://www.google.co.nz"><div class="frame-content">
+							<h4> 1. Login Screen</h4>
 							<p>This is content text to fill the box - just for show ...</p>
-						</div>
+						</div></a>
 					</div>
 				</div>
 
@@ -82,7 +113,7 @@
 
 
 
-	<div class="band-red">
+	<div class="band-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
@@ -102,7 +133,7 @@
 		</div><!--ENDS container-->
 	</div>
 
-	<div class="band-grey">
+	<div class="band-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
@@ -122,7 +153,7 @@
 		</div><!--ENDS container-->
 	</div>
 
-	<div class="band-cyan">
+	<div class="band-white">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
@@ -300,7 +331,7 @@
 		
 	
 	
-		
+
 		
 
 		
@@ -317,11 +348,23 @@
 		ga('send', 'pageview');
 	</script>
 
+	<!-- Javascript -->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
 	<!-- BOOTSTRAP Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-	<!-- Javascript -->
-	<script src="scripts/misc.js"></script>
+	
+
+	<!-- Hides Off-Canvas menu after selecting a menu tab/item -->
+	<script>
+		(function() {
+			$('#menu').on('click', function(){
+				//$('#myCheckbox').prop('checked', true); // Checks it
+				$('#myCheckbox').prop('checked', false); // Unchecks it
+			});
+		})();
+	</script>
 
 	
 </body>
