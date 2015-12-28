@@ -39,15 +39,6 @@
 | STRUCTURE
 |-----------------------------------------------------------------------------------------------------------------
 */
-
-.test {
-	margin-top: 110px;
-	margin-bottom: -511px;
-	background: #FFF;
-	min-height:422px;
-	opacity: 0.2;
-}
-
 body {
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
@@ -381,6 +372,95 @@ nav:hover #menuToggle span {
 
 /*
 |-----------------------------------------------------------------------------------------------------------------
+| CAROUSEL
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.carousel.slide {
+	margin: 0 auto;
+	padding: 50px 0;
+	background-image: url('../img/web/iPhone.png');
+    background-size: 320px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background: none;
+}
+
+.carousel {
+	h3 {
+		font-weight: 300;
+		position: absolute;
+		width: 100%;
+		top: 30px;
+		text-align: center;
+	}
+}
+
+
+.carousel-caption {
+	bottom:0;
+	left: 19%;
+	right: 20%;
+	color: #333;
+	background: rgba(255,255,255, 0.85);
+	padding: 10px 20px 0 20px;
+	text-align: center;
+	text-shadow: none;
+	border: solid 1px #EBEBEB;
+	&:hover {
+		color: #FFF;
+		background: rgba(0,0,0, 0.75);
+		transition: background 1s ease-in;
+		cursor: pointer;
+	}
+	p {
+		font-size: 12px;
+		line-height: 1.4;
+	}
+}
+
+.item {
+	height:600px;
+	.slide-up {
+		height: 300px;
+		width: 600px;
+	}
+	img {
+		opacity: 0;
+	}
+	.carousel-caption {
+		opacity: 0;
+	}
+}
+.item.active {
+	height: 600px;
+	.slide-up {
+		height: 0;
+		width: 600px;
+		transition: all .3s cubic-bezier(.42,0,.58,1);
+	}
+	img {
+		opacity: 1;
+		transition: all .9s ease-out;
+	}
+	.carousel-caption {
+		opacity: 1;
+		transition: all .3s ease-out;
+	}
+}
+
+
+
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
 | TYPOGRAPHY
 |-----------------------------------------------------------------------------------------------------------------
 */
@@ -404,7 +484,8 @@ nav:hover #menuToggle span {
 */
 a,
 a:hover,
-a:active {
+a:active,
+a:focus {
 	color: #777;
 	outline: none;
 	text-decoration: none;
