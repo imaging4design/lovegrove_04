@@ -42,8 +42,6 @@
 body {
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	line-height: 1;
 	font-weight: 300;
 	padding-top: 30px;
 }
@@ -247,6 +245,18 @@ body {
 
 /*
 |-----------------------------------------------------------------------------------------------------------------
+| BOOTSTRAP OVERIDES!
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.row-no-padding {
+	[class*="col-"] {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
 | OFF-CANVAS
 |-----------------------------------------------------------------------------------------------------------------
 */
@@ -383,7 +393,7 @@ nav:hover #menuToggle span {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    max-width: 600px;
+    max-width: 340px;
     height: auto;
 }
 
@@ -428,7 +438,7 @@ nav:hover #menuToggle span {
 .item {
 	height:600px;
 	.slide-up {
-		height: 300px;
+		height: 100px;
 		width: 600px;
 	}
 	img {
@@ -447,7 +457,7 @@ nav:hover #menuToggle span {
 	}
 	img {
 		opacity: 1;
-		transition: all .9s ease-out;
+		transition: all .7s ease-out;
 	}
 	.carousel-caption {
 		opacity: 1;
