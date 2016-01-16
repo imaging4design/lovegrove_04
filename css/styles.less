@@ -34,6 +34,10 @@
 @colGreyDark02: #434A54;
 
 
+.transition-slow {
+	transition: all 0.15s linear;
+}
+
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | STRUCTURE
@@ -41,105 +45,14 @@
 */
 body {
 	position: relative;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 	font-weight: 300;
 	padding-top: 30px;
 }
-.frame {
-	position: relative;
-	color: #777;
-	background: #FFF;
-	margin-top: 20px;
-	border: solid 1px #EBEBEB;
-	-webkit-box-shadow: 0 0 3px 3px #F5F5F5;
-	box-shadow: 0 0 2px 2px #F5F5F5;
+h1.page-title {
+	font-weight: 700;
 }
 
-.frame-content {
-	position: relative;
-	padding: 10px 20px;
-	&:hover {
-		background: #333;
-		color: #FFF;
-		cursor: pointer;
-	}
-	transition: all .4s cubic-bezier(.17,.67,.89,.6);
-}
-
-.frame-hidden {
-	position: absolute;
-	top:0;
-	height:100%;
-	width:100%;
-	padding: 20px;
-	color: #333;
-	background: #FFF;
-	opacity: 0;
-	p {
-		font-size: 14px;
-		line-height: 1.4;
-	}
-	&:hover {
-		height:100%;
-		opacity: .85;
-		cursor: pointer;
-	}
-	transition: all .4s cubic-bezier(.17,.67,.89,.6);
-
-}
-
-.frame-hidden:hover + a .frame-content {
-	color: #EEE;
-	background: #FFF;
-}
-
-.icon-search {
-	position: absolute;
-	color: #333;
-	background: #FFF;
-	top:0;
-	right:0;
-	padding: 10px 12px;
-	opacity: .5;
-}
-
-.frame:hover > .icon-search {
-	opacity: 0;
-	display: none;
-	background: none;
-}
-
-.logo-large {
-	position: absolute;
-	font-size: 20px;
-	background: #C00;
-	padding:10px 30px;
-	transform: skew(-25deg, 0deg);
-	display: block;
-	height: 44px;
-	top: 0px;
-	left: 0px;
-	border-right: solid 10px #FFF;
-	a {
-		transform: skew(50deg, 0deg);
-		color: #FFF;
-	}
-}
-.band-nav {
-	position: fixed;
-	color: #333;
-	top:0;
-	width: 100%;
-	height: 45px;
-	background: #000;
-	padding-top: 14px;
-	border-bottom: solid 1px #EBEBEB;
-	z-index: 1;
-	p {
-		color: #FFF;
-		padding-left: 120px;
-	}
-}
 .band-all {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -148,133 +61,77 @@ body {
 	.band-all;
 	background: #FFF;
 }
-.band-red {
-	.band-all;
-	background: @colOrange01;
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| MAIN MENU
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.navbar-default {
+	background-color: #FFF;
+	opacity: 0.95;
+	border-color: @colOrange02;
+	-webkit-box-shadow: 0 0px 3px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 0px 3px 3px rgba(0,0,0,0.1);
 }
-.band-grey {
-	.band-all;
-	background: @colGreyDark02;
-}
-.band-cyan {
-	.band-all;
-	background: @colCyan01;
-}
-.img-bottom {
-	position: absolute;
-    left: 0;
-    bottom: 0;
-	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%); /* For Webkit browsers */
-	filter: gray; /* For IE 6 - 9 */
-	-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
-	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-	&:hover {
-		filter: grayscale(0%);
-		-webkit-filter: grayscale(0%);
-		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-	}
-}
-.red {
-	background: @colRed01;
-}
-.orange {
-	background: @colOrange01;
-}
-.yellow {
-	background: @colYellow01;
-}
-.green {
-	background: @colGreen01;
-}
-.cyan {
-	background: @colCyan01;
-}
-.blue {
-	background: @colBlue01;
-}
-.purple {
-	background: @colPurple01;
-}
-.magenta {
-	background: @colMagenta01;
-}
-.greyLight {
-	background: @colGreyLight01;
-}
-.greyMed {
-	background: @colGreyMed01;
-}
-.greyDark {
-	background: @colGreyDark01;
+.navbar-fixed-top {
+	top: 0px;
+	border-width: 0px 0px 3px;
 }
 
-.red2 {
-	background: @colRed02;
+.navbar-default .navbar-nav > li > a {
+	color: #000;
+	background-color: transparent;
 }
-.orange2 {
-	background: @colOrange02;
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover {
+	color: #FFF;
+	background-color: @colOrange02;
+	transition: background-color 0.5s linear;
 }
-.yellow2 {
-	background: @colYellow02;
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #FFF;
+	background-color: @colOrange02;
 }
-.green2 {
-	background: @colGreen02;
+.navbar-nav > li > a {
+	font-size: 1.5em;
+	font-weight: 400;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
 }
-.cyan2 {
-	background: @colCyan02;
-}
-.blue2 {
-	background: @colBlue02;
-}
-.purple2 {
-	background: @colPurple02;
-}
-.magenta2 {
-	background: @colMagenta02;
-}
-.greyLight2 {
-	background: @colGreyLight02;
-}
-.greyMed2 {
-	background: @colGreyMed02;
-}
-.greyDark2 {
-	background: @colGreyDark02;
+.navbar-brand {
+	float: left;
+	height: 50px;
+	padding: 25px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
 }
 
 /*
 |-----------------------------------------------------------------------------------------------------------------
-| BOOTSTRAP OVERIDES!
+| MOBILE MENU (OFF-CANVAS)
 |-----------------------------------------------------------------------------------------------------------------
 */
-.row-no-padding {
-	[class*="col-"] {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
-}
-
-/*
-|-----------------------------------------------------------------------------------------------------------------
-| OFF-CANVAS
-|-----------------------------------------------------------------------------------------------------------------
-*/
-nav {
+nav#mobile {
 	position: fixed;
-	background: #000;
 	width: 44px;
 	height: 44px;
 	top: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 12;
 	transition: all .2s linear;
 	&:hover {
-		background: @colRed01;
+		background: @colOrange02;
 	}
 }
 
-nav:hover #menuToggle span {
+nav#mobile:hover #menuToggle span {
 	background: #FFF;
 }
 
@@ -283,7 +140,7 @@ nav:hover #menuToggle span {
 	position: fixed;
 	top: 15px;
 	right: 12px;
-	z-index: 1;
+	z-index: 11;
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -297,7 +154,7 @@ nav:hover #menuToggle span {
 	right: -15px;
 	cursor: pointer;
 	opacity: 0; /* hide this */
-	z-index: 2; /* and place it over the hamburger */
+	z-index: 12; /* and place it over the hamburger */
 }
 
 /* Just a quick hamburger */
@@ -307,9 +164,9 @@ nav:hover #menuToggle span {
 	height: 3px;
 	margin-bottom: 3px;
 	position: relative;
-	background: #AAA;
+	background: #CCC;
 	border-radius: 3px;
-	z-index: 1;
+	z-index: 11;
 	transform-origin: 4px 0px;
 	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),  opacity 0.55s ease;
 }
@@ -380,9 +237,217 @@ nav:hover #menuToggle span {
 	opacity: 1;
 }
 
+.logo-large {
+	position: absolute;
+	font-size: 20px;
+	background: @colOrange02;
+	padding:8px 12px;
+	display: block;
+	height: 44px;
+	top: 0px;
+	left: 0px;
+	/*border-right: solid 1px #FFF;*/
+	a {
+		color: #FFF;
+	}
+}
+.band-nav-mobile {
+	font-size: 20px;
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 45px;
+	padding: 8px 0 8px 60px;
+	background: #FFF;
+	border-bottom: solid 2px @colOrange02;
+	-webkit-box-shadow: 0 0px 3px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 0px 3px 3px rgba(0,0,0,0.1);
+	z-index: 11;
+	p {
+		color: #000;
+		font-weight: 400;
+		letter-spacing: -0.05em;
+		text-transform: uppercase;
+	}
+}
+
+
 /*
 |-----------------------------------------------------------------------------------------------------------------
-| CAROUSEL
+| BOOTSTRAP OVERIDES!
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.row-no-padding {
+	[class*="col-"] {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| TYPOGRAPHY
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.h3, h3 {
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| LISTS
+|-----------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| LINKS
+|-----------------------------------------------------------------------------------------------------------------
+*/
+a,
+a:hover,
+a:active,
+a:focus {
+	color: #777;
+	outline: none;
+	text-decoration: none;
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| FORMS
+|-----------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| TABLES
+|-----------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| IMAGES
+|-----------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| BUTTONS
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.btn {
+	background: red;
+	color: #FFF;
+	border:none;
+	border-radius: 0;
+}
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| MISC
+|-----------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+|-----------------------------------------------------------------------------------------------------------------
+|
+| START TUTORIAL CSS RULES BELOW
+|
+|-----------------------------------------------------------------------------------------------------------------
+|-----------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| 1. HOVER FRAME
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.hover-frame {
+	position: relative;
+	color: #777;
+	background: #FFF;
+	margin-top: 20px;
+	border: solid 1px #EBEBEB;
+	-webkit-box-shadow: 0 0 3px 3px #F5F5F5;
+	box-shadow: 0 0 2px 2px #F5F5F5;
+}
+
+.hover-frame-content {
+	position: relative;
+	padding: 10px 20px;
+	&:hover {
+		background: #333;
+		color: #FFF;
+		cursor: pointer;
+	}
+	transition: all .4s cubic-bezier(.17,.67,.89,.6);
+}
+
+.hover-frame-hidden {
+	position: absolute;
+	top:0;
+	height:100%;
+	width:100%;
+	padding: 20px;
+	color: #333;
+	background: #FFF;
+	opacity: 0;
+	p {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+	&:hover {
+		height:100%;
+		opacity: .85;
+		cursor: pointer;
+	}
+	transition: all .4s cubic-bezier(.17,.67,.89,.6);
+
+}
+
+.hover-frame-hidden:hover + a .hover-frame-content {
+	color: #EEE;
+	background: #FFF;
+}
+
+.hover-icon-search {
+	position: absolute;
+	color: #333;
+	background: #FFF;
+	top:0;
+	right:0;
+	padding: 10px 12px;
+	opacity: .5;
+}
+
+.hover-frame:hover > .hover-icon-search {
+	opacity: 0;
+	display: none;
+	background: none;
+}
+
+
+
+
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| 2. ANIMATING CAROUSEL
 |-----------------------------------------------------------------------------------------------------------------
 */
 .carousel.slide {
@@ -467,78 +532,116 @@ nav:hover #menuToggle span {
 
 
 
-
-
 /*
 |-----------------------------------------------------------------------------------------------------------------
-| TYPOGRAPHY
+| 3. KEYFRAMES CSS
 |-----------------------------------------------------------------------------------------------------------------
 */
-.h3, h3 {
-	margin-top: 12px;
-	margin-bottom: 10px;
+.ball {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: blue;
+	border-radius: 100%;
+	animation:gavin 0.9s linear infinite,
+		moveleft 2s linear infinite;
+}
+.ball1 {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: green;
+	border-radius: 100%;
+	animation:gavin2 0.91s linear infinite,
+		moveleft 2.1s linear infinite;
+}
+.ball2 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: orange;
+	border-radius: 100%;
+	animation:gavin3 0.92s linear infinite,
+		moveright 2.2s linear infinite;
+}
+@keyframes gavin {
+	0% { bottom:100%; }
+	25% { bottom:0%; width:100px; height: 100px; }
+	30% { bottom:0%; width:110px; height: 50px; }
+	35% { bottom:0%; width:100px; height: 100px; }
+	100% { bottom:100%; }
+}
+@keyframes gavin2 {
+	0% { bottom:80%; }
+	25% { bottom:0%; width:80px; height: 80px; }
+	30% { bottom:0%; width:110px; height: 40px; }
+	35% { bottom:0%; width:80px; height: 80px; }
+	100% { bottom:80%; }
+}
+@keyframes gavin3 {
+	0% { bottom:60%; }
+	25% { bottom:0%; width:80px; height: 60px; }
+	30% { bottom:0%; width:110px; height: 30px; }
+	35% { bottom:0%; width:80px; height: 60px; }
+	100% { bottom:60%; }
+}
+@keyframes moveleft {
+	from { left:0; }
+	to { left: 100%; }
+}
+@keyframes moveright {
+	from { right:0; }
+	to { right: 100%; }
 }
 
 
 /*
 |-----------------------------------------------------------------------------------------------------------------
-| LISTS
+| 3. KEYFRAMES CSS
 |-----------------------------------------------------------------------------------------------------------------
 */
-
-
-/*
-|-----------------------------------------------------------------------------------------------------------------
-| LINKS
-|-----------------------------------------------------------------------------------------------------------------
-*/
-a,
-a:hover,
-a:active,
-a:focus {
-	color: #777;
-	outline: none;
-	text-decoration: none;
+.zelezny {
+	width: 166px;
+	height: 168px;
+	margin: 2% auto;
+	border: solid 5px #EBEBEB;
+	border-bottom: solid 20px #EBEBEB;
+	background: url('../img/zelezny.png') left center;
+	animation: play-one;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-duration: 1.8s;
+	animation-delay: 4s;
 }
 
-/*
-|-----------------------------------------------------------------------------------------------------------------
-| FORMS
-|-----------------------------------------------------------------------------------------------------------------
-*/
-
-
-/*
-|-----------------------------------------------------------------------------------------------------------------
-| TABLES
-|-----------------------------------------------------------------------------------------------------------------
-*/
-
-
-/*
-|-----------------------------------------------------------------------------------------------------------------
-| IMAGES
-|-----------------------------------------------------------------------------------------------------------------
-*/
-
-
-/*
-|-----------------------------------------------------------------------------------------------------------------
-| BUTTONS
-|-----------------------------------------------------------------------------------------------------------------
-*/
-.btn {
-	background: red;
-	color: #FFF;
-	border:none;
-	border-radius: 0;
+@keyframes play-one {
+	100% { background-position: -2000px; }
 }
 
-/*
-|-----------------------------------------------------------------------------------------------------------------
-| MISC
-|-----------------------------------------------------------------------------------------------------------------
-*/
+.waitakere-logo {
+	width: 150px;
+	height: 150px;
+	margin: 2% auto;
+	background: url('../img/waitakere-logo.png') left center;
+	animation: play-two;
+	animation-timing-function: steps(8);
+	animation-iteration-count: infinite;
+	animation-duration: 3.8s;
+	animation-delay: 2s;
+}
+
+@keyframes play-two {
+	100% { background-position: -1200px; }
+}
+
+
+
+
+
+
+
+
+
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -548,30 +651,7 @@ a:focus {
 	body {
 		padding-top: 60px;
 	}
-	.logo-large {
-		height: 59px;
-	}
-	.band-nav {
-		height: 60px;
-		padding-top: 22px;
-	}
-	nav {
-		width: 59px;
-		height: 59px;
-	}
-	#menuToggle {
-		top: 20px;
-		right: 14px;
-	}
-	#menuToggle span {
-		width: 30px;
-		height: 4px;
-		margin-bottom: 5px;
-	}
-	#menuToggle input {
-		top: -18px;
-		right: -10px;
-	}
+	
 }
 
 /* Medium devices (desktops, 992px and up) */

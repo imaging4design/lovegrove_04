@@ -1,0 +1,96 @@
+<?php
+	// Define the site path
+	$site_path = 'http://localhost/lovegrove_04/';
+?>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lovegrove Design</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	
+	<!-- BOOTSTRAP Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- FONTAWESOME -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- GOOGLE FONTS Open Sans -->
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="<?php echo $site_path . 'css/styles.css' ?>">
+
+</head>
+
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	<!-- MAIN NAV BAR -->
+	<nav class="navbar navbar-default navbar-fixed-top hidden-xs">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Project name</a>
+			</div><!-- ENDS navbar-header -->
+
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="<?php echo $site_path; ?>index.php">Home</a></li>
+					<li><a href="<?php echo $site_path; ?>pages/hovers.php">Hovers</a></li>
+					<li><a href="<?php echo $site_path; ?>pages/keyframes.php">Keyframes</a></li>
+					<!-- <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Nav header</li>
+						<li><a href="#">Separated link</a></li>
+						<li><a href="#">One more separated link</a></li>
+					</ul>
+					</li> -->
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../navbar/">Contact</a></li>
+				</ul>
+			</div><!--ENDS navbar-collapse -->
+
+		</div><!-- ENDS container -->
+	</nav><!-- ENDS navbar -->
+
+
+
+	<!-- MOBILE NAV BAR -->
+	<nav id="mobile" class="visible-xs">
+		<div id="menuToggle">
+			<input type="checkbox" id="myCheckbox">
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+				<a href="<?php echo $site_path; ?>index.php"><li><i class="fa fa-desktop"></i> Home</li></a>
+				<a href="<?php echo $site_path; ?>pages/hovers.php"><li><i class="fa fa-desktop"></i> Hovers</li></a>
+				<a href="<?php echo $site_path; ?>pages/keyframes.php"><li><i class="fa fa-desktop"></i> Keyframes</li></a>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="band-nav-mobile visible-xs">
+		<div class="logo-large">
+			<a href="<?php echo $site_path; ?>index.php">LD</a>
+		</div>
+		<p>Lovegrove Design</p>
+	</div><!--ENDS band-->

@@ -18,11 +18,11 @@ var	gulp = require('gulp'),
 
 
 // TASK :: Concat ALL LESS files into single file called 'styles.less'
-// gulp.task('concat', function() {
-// 	return gulp.src(['css/styles.less'])
-// 	.pipe(concat('styles.less'))
-// 	.pipe(gulp.dest('css'));
-// });
+gulp.task('concat', function() {
+	return gulp.src(['css/styles.less'])
+	.pipe(concat('styles.less'))
+	.pipe(gulp.dest('css'));
+});
 
 
 // TASK :: Process 'styles.less' file into CSS file
@@ -30,11 +30,10 @@ gulp.task('less', function (){
 	gulp.src('css/styles.less')
 	.pipe(less())
 	.pipe(autoprefixer('last 6 versions'))
-	.pipe(gulp.dest('css'))
 	.pipe(minifyCSS())
 	.pipe(rename('styles.css'))
 	.pipe(gulp.dest('dist/css'))
-	
+	.pipe(gulp.dest('css'))
 	//.pipe(notify('Less Compiled, Prefixed and Minified'))
 	.pipe(livereload());
 });
@@ -56,13 +55,13 @@ gulp.task('html', function (){
 
 gulp.task('watch', function() {
 	livereload.listen();
-	//gulp.watch(['css/styles.less'], ['concat']),
+	gulp.watch(['css/styles.less'], ['concat']),
 	gulp.watch('css/styles.less', ['less'])
 	//gulp.watch('index.html', ['html'])
 	gulp.watch('**/*.php', ['html'])
 });
 
-gulp.task('default', ['less', 'html', 'watch']);
+gulp.task('default', ['concat', 'less', 'html', 'watch']);
 
 
 
