@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-12 outline">
-		<h3>View the case studies ...</h3>
+		<h3>Graphics View the case studies ...</h3>
 	</div><!--ENDS col-->
 </div><!--ENDS row-->
 

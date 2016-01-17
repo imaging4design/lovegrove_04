@@ -35,7 +35,7 @@ $(document).ready(function(){
 		if( height > maximum ) {
 			navbarFixedTop.css({'position': 'fixed', 'top': 0});
 			navbarNavListItems.css({'padding-top': padSmall, 'padding-bottom': padSmall});
-			navbarBrand.css({'padding-top': padSmall, 'padding-bottom': padSmall, 'height': 0});
+			navbarBrand.css({'padding-top': padSmall, 'padding-bottom': padSmall});
 			navbar.css({'min-height': 0});
 
 			navbarNavListItems.addClass('translate');
@@ -44,7 +44,7 @@ $(document).ready(function(){
 		} else {
 			navbarFixedTop.css({'position': 'absolute', 'top': 30});
 			navbarNavListItems.css({'padding-top': padLarge, 'padding-bottom': padLarge});
-			navbarBrand.css({'padding-top': padLarge, 'padding-bottom': padLarge, 'height': 50});
+			navbarBrand.css({'padding-top': padLarge, 'padding-bottom': padLarge});
 			navbar.css({'min-height': 50});
 		}
 		

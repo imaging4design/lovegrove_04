@@ -101,9 +101,6 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
   border-bottom: 8px solid transparent;
   border-left: 8px solid #000;
 }
-.test {
-  margin-top: 100px;
-}
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | MASTHEAD THIN
@@ -186,11 +183,12 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: 100%;
   padding: 25px;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
+  background: #000;
 }
 .navbar-brand.translate {
   -webkit-transition: 0.15s;
