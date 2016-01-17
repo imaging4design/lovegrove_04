@@ -1,6 +1,7 @@
 <?php
 	// Define the site path
 	$site_path = 'http://localhost/lovegrove_04/';
+	$inc_path = 'http://localhost/lovegrove_04/pages/inc/';
 ?>
 <!doctype html>
 <html>
@@ -30,6 +31,24 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
+
+	<!-- MASTHEAD THIN -->
+	<div class="masthead-thin hidden-xs">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6">
+					<span>Lovegrove Design</span>
+				</div><!--ENDS col-->
+				<div class="col-sm-6 text-right">
+					<span>Email: gavin@imaging4design.co.nz</span>
+				</div><!--ENDS col-->
+
+			</div><!--ENDS row-->
+		</div><!--ENDS container-->
+	</div>
+
+
 	<!-- MAIN NAV BAR -->
 	<nav class="navbar navbar-default navbar-fixed-top hidden-xs">
 		<div class="container">
@@ -41,16 +60,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Project name</a>
+				<a class="navbar-brand" href="<?php echo $site_path; ?>index.php">HOME</a>
 			</div><!-- ENDS navbar-header -->
 
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="<?php echo $site_path; ?>index.php">Home</a></li>
+					<li class="active home"><a href="<?php echo $site_path; ?>index.php">Case Studies</a>
+						<div class="home-reveal"><?php include('header_local.php'); ?></div>
+					</li>
+
 					<li><a href="<?php echo $site_path; ?>pages/hovers.php">Hovers</a></li>
-					<li><a href="<?php echo $site_path; ?>pages/keyframes.php">Keyframes</a></li>
-					<!-- <li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					<li><a href="<?php echo $site_path; ?>pages/keyframes.php">Graphics</a></li>
+					<li><a href="<?php echo $site_path; ?>pages/keyframes.php">Logos</a></li>
+					<li class="dropdown">
+					<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Action</a></li>
 						<li><a href="#">Another action</a></li>
@@ -80,9 +103,10 @@
 			<span></span>
 			<span></span>
 			<ul id="menu">
-				<a href="<?php echo $site_path; ?>index.php"><li><i class="fa fa-desktop"></i> Home</li></a>
-				<a href="<?php echo $site_path; ?>pages/hovers.php"><li><i class="fa fa-desktop"></i> Hovers</li></a>
-				<a href="<?php echo $site_path; ?>pages/keyframes.php"><li><i class="fa fa-desktop"></i> Keyframes</li></a>
+				<li><a href="<?php echo $site_path; ?>index.php"><i class="fa fa-chevron-right"></i> Home</a></li>
+				<li><a href="<?php echo $site_path; ?>pages/hovers.php"><i class="fa fa-chevron-right"></i> Hovers</a></li>
+				<li><a href="<?php echo $site_path; ?>pages/keyframes.php"><i class="fa fa-chevron-right"></i> Graphics</a></li>
+				<li><a href="<?php echo $site_path; ?>pages/keyframes.php"><i class="fa fa-chevron-right"></i> Logos</a></li>
 			</ul>
 		</div>
 	</nav>
