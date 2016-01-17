@@ -45,6 +45,7 @@ h1.page-title {
   color: #FFF;
   padding: 30px;
   background: #111;
+  border-top: solid 3px #CDC81E;
   z-index: -1;
   /*.box-shadow;*/
 }
