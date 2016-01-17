@@ -24,7 +24,7 @@ $(document).ready(function(){
 		navbarNavListItems = $('.navbar-nav > li > a'),
 		navbarBrand = $('.navbar-brand'),
 		navbar = $('.navbar'),
-		maximum = 20,
+		maximum = 30,
 		padSmall = 15,
 		padLarge = 25;
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
 			navbarBrand.addClass('translate');
 
 		} else {
-			navbarFixedTop.css({'position': 'absolute', 'top': 20});
+			navbarFixedTop.css({'position': 'absolute', 'top': 30});
 			navbarNavListItems.css({'padding-top': padLarge, 'padding-bottom': padLarge});
 			navbarBrand.css({'padding-top': padLarge, 'padding-bottom': padLarge, 'height': 50});
 			navbar.css({'min-height': 50});
@@ -53,12 +53,17 @@ $(document).ready(function(){
 
 	/*
 	|-----------------------------------------------------------------------------------------------------------------
-	| Comment
+	| MENU DROPDOWN CONTENT
 	|-----------------------------------------------------------------------------------------------------------------
 	*/
 	var myParentWidth = $('ul.nav.navbar-nav').width();
-	$('li.active.home').hover(function(){
-		$('.home-reveal').css({'width': myParentWidth + 100});
+	$('li.active.websites').hover(function(){
+		$('.home-websites').css({'width': myParentWidth + 100});
+		
+	});
+
+	$('li.graphics').hover(function(){
+		$('.home-graphics').css({'width': myParentWidth + 100});
 		
 	});
 

@@ -41,7 +41,7 @@
 					<span>Lovegrove Design</span>
 				</div><!--ENDS col-->
 				<div class="col-sm-6 text-right">
-					<span>Email: gavin@imaging4design.co.nz</span>
+					<span><i class="fa fa-phone-square"></i> 021 0277 1109 <i class="fa fa-envelope"></i> Email <i class="fa fa-linkedin-square"></i> LinkedIn</span>
 				</div><!--ENDS col-->
 
 			</div><!--ENDS row-->
@@ -51,7 +51,7 @@
 
 	<!-- MAIN NAV BAR -->
 	<nav class="navbar navbar-default navbar-fixed-top hidden-xs">
-		<div class="container">
+		<div class="container container-menu">
 
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -65,13 +65,16 @@
 
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active home"><a href="<?php echo $site_path; ?>index.php">Case Studies</a>
-						<div class="home-reveal"><?php include('header_local.php'); ?></div>
+					<li class="active websites"><a href="<?php echo $site_path; ?>index.php">Case Studies</a>
+						<div class="home-websites"><?php include('websites.php'); ?></div>
 					</li>
 
-					<li><a href="<?php echo $site_path; ?>pages/hovers.php">Hovers</a></li>
-					<li><a href="<?php echo $site_path; ?>pages/keyframes.php">Graphics</a></li>
+					<li class="graphics"><a href="<?php echo $site_path; ?>pages/hovers.php">Graphics</a>
+						<div class="home-graphics"><?php include('graphics.php'); ?></div>
+					</li>
+
 					<li><a href="<?php echo $site_path; ?>pages/keyframes.php">Logos</a></li>
+					<li><a href="<?php echo $site_path; ?>pages/keyframes.php">Misc</a></li>
 					<li class="dropdown">
 					<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -123,3 +126,13 @@
 		</div>
 		<p>Lovegrove Design</p>
 	</div><!--ENDS band-->
+
+
+
+	<div class="container test">
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Hello its me</p>
+			</div>
+		</div><!--ENDS row-->
+	</div><!--ENDS container-->
