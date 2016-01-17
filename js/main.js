@@ -62,6 +62,10 @@ $(document).ready(function(){
 		
 	});
 
+	$('ul#menu li a').hover(function(){
+		$('ul#submenu').css({'display': 'block'});
+	});
+
 
 });
 

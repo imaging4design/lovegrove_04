@@ -103,7 +103,12 @@
 			<span></span>
 			<span></span>
 			<ul id="menu">
-				<li><a href="<?php echo $site_path; ?>index.php"><i class="fa fa-chevron-right"></i> Home</a></li>
+				<li><a href="<?php echo $site_path; ?>index.php"><i class="fa fa-chevron-right"></i> Home</a>
+					<ul id="submenu">
+						<li><a href="#">One</a></li>
+						<li><a href="#">Two</a></li>
+					</ul>
+				</li>
 				<li><a href="<?php echo $site_path; ?>pages/hovers.php"><i class="fa fa-chevron-right"></i> Hovers</a></li>
 				<li><a href="<?php echo $site_path; ?>pages/keyframes.php"><i class="fa fa-chevron-right"></i> Graphics</a></li>
 				<li><a href="<?php echo $site_path; ?>pages/keyframes.php"><i class="fa fa-chevron-right"></i> Logos</a></li>
