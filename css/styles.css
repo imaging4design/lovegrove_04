@@ -536,7 +536,7 @@ a:focus {
 .carousel.slide {
   margin: 0 auto;
   padding: 50px 0;
-  background-image: url('../img/web/iPhone.png');
+  background-image: url('../img/web/iPhone_base.png');
   background-size: 320px 600px;
   background-repeat: no-repeat;
   background-position: center;
