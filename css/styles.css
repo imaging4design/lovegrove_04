@@ -135,6 +135,12 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
   padding-bottom: 120px;
   background: #F5F5F5;
 }
+.band-cyan {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #FFF !important;
+  background: #4A89DC;
+}
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | MAIN MENU
@@ -190,6 +196,9 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
   font-weight: 400;
   line-height: 20px;
   background: #000;
+}
+.navbar-brand:hover {
+  background-color: #CDC81E !important;
 }
 .navbar-brand.translate {
   -webkit-transition: 0.15s;
@@ -535,7 +544,7 @@ a:focus {
 */
 .carousel.slide {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 35px 0;
   background-image: url('../img/web/iPhone_base.png');
   background-size: 320px 600px;
   background-repeat: no-repeat;
