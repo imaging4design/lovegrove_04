@@ -56,16 +56,11 @@ $(document).ready(function(){
 	| MENU DROPDOWN CONTENT
 	|-----------------------------------------------------------------------------------------------------------------
 	*/
+	// Set width of mega-menu flyout/drop-down
 	var myParentWidth = $('ul.nav.navbar-nav').width();
-	$('li.active.websites').hover(function(){
-		$('.home-websites').css({'width': myParentWidth + 100});
-		
-	});
 
-	$('li.graphics').hover(function(){
-		$('.home-graphics').css({'width': myParentWidth + 100});
-		
-	});
+	$('.home-websites').css({'width': myParentWidth});
+	$('.home-graphics').css({'width': myParentWidth});
 
 	$('ul#menu li a').hover(function(){
 		$('ul#submenu').css({'display': 'block'});
