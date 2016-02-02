@@ -145,6 +145,94 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
   padding-left: 0;
   padding-right: 0;
 }
+.test1 {
+  position: relative;
+  background: #4FC1E9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+}
+.test1:hover .sample {
+  color: #FFF;
+  height: 100%;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  cursor: pointer;
+}
+.test1 .fa {
+  color: #FFF;
+  font-size: 45px;
+}
+.test2 {
+  position: relative;
+  background: #3BAFDA;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+}
+.test2:hover .sample {
+  color: #FFF;
+  height: 100%;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  cursor: pointer;
+}
+.test2 .fa {
+  color: #FFF;
+  font-size: 45px;
+}
+.sample {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  overflow: hidden;
+}
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | MAIN MENU

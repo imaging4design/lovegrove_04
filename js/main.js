@@ -67,6 +67,22 @@ $(document).ready(function(){
 	});
 
 
+	
+	function divHeights() {
+		var divWidth = $('.test2').outerWidth(),
+			divs = $('.test1, .test2');
+		divs.height(divWidth);
+	};
+
+	divHeights();
+	
+
+	$( window ).resize(function() {
+		divHeights();
+	});
+
+
+
 });
 
 

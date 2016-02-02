@@ -3,11 +3,62 @@
 
 	<!-- Start content here -->
 	<div class="band-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 test1">
+					<img src="img/web/web_anz.png" class="img-responsive" height="100%" width="100%">
+					<a name="#section1"><div class="sample">
+						<h3>Case study 1</h3>
+					</div></a>
+				</div><!--ENDS col-->
+				<div class="col-xs-3 test2">
+					<img src="img/web/web_elearn.png" class="img-responsive" height="100%" width="100%">
+					<div class="sample">
+						<h3>Case study 2</h3>
+					</div>
+				</div><!--ENDS col-->
+				<div class="col-xs-3 test1">
+					<img src="img/web/web_timesheet.png" class="img-responsive" height="100%" width="100%">
+					<div class="sample">
+						<h3>Case study 3</h3>
+					</div>
+				</div><!--ENDS col-->
+				<div class="col-xs-3 test2">
+					<img src="img/web/web_lacigale.png" class="img-responsive" height="100%" width="100%">
+					<div class="sample">
+						<h3>Case study 4</h3>
+					</div>
+				</div><!--ENDS col-->
+
+				<div class="col-xs-3 test2">
+					<i class="fa fa-mobile"></i>
+					<div class="sample"><h3>Hello</h3></div>
+				</div><!--ENDS col-->
+				<div class="col-xs-3 test1">
+					<i class="fa fa-desktop"></i>
+					<div class="sample"><h3>Hello</h3></div>
+				</div><!--ENDS col-->
+				<div class="col-xs-3 test2">
+					<i class="fa fa-mobile"></i>
+					<div class="sample"><h3>Hello</h3></div>
+				</div><!--ENDS col-->
+				<div class="col-xs-3 test1">
+					<i class="fa fa-desktop"></i>
+					<div class="sample"><h3>Hello</h3></div>
+				</div><!--ENDS col-->
+			</div><!--ENDS row-->
+		</div><!--ENDS container-->
+	</div><!--ENDS band-white-->
+
+
+
+	<!-- Start content here -->
+	<div class="band-white">
 
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h1 class="page-title">Case study 1</h1>
+					<h1 class="page-title" id="#section1">Case study 1</h1>
 					<h3>Athletics New Zealand - Records and Rankings</h3>
 					<p>
 						Creating a new website today takes a slight mental adjustment. We now have to think of all the different platforms your site might be viewed from. Once apon a time it was simply the humble desktop, now days your audience will more than likely be finding you from a phone or tablet device. So what does this mean? Take your current website for example, if it's been around for a few years, its likely to be a fixed width site that gets shrunk down when viewed on a mobile device. This means a lot of frustrating zoom in / zoom out behaviour for your viewers - far from ideal!
