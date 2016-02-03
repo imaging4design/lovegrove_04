@@ -69,9 +69,13 @@ $(document).ready(function(){
 
 	
 	function divHeights() {
-		var divWidth = $('.test2').outerWidth(),
-			divs = $('.test1, .test2');
+		var divWidth = $('.square').innerWidth(),
+			divs = $('.square'),
+			arrow = $('.arrow');
 		divs.height(divWidth);
+		arrow.css({
+			'border-width': divWidth / 8
+		});
 	};
 
 	divHeights();

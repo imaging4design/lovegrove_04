@@ -5,47 +5,76 @@
 	<div class="band-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-3 test1">
+				<div class="col-xs-4 square">
 					<img src="img/web/web_anz.png" class="img-responsive" height="100%" width="100%">
-					<a name="#section1"><div class="sample">
-						<h3>Case study 1</h3>
-					</div></a>
+					<a name="#section1">
+						<div class="sample">
+							<h3>Case study 1</h3>
+							<p>Athletics New Zealand</p>
+							<p><small> Records and rankings</small></p>
+						</div>
+						<div class="arrow"></div>
+					</a>
 				</div><!--ENDS col-->
-				<div class="col-xs-3 test2">
+				<div class="col-xs-4 square">
 					<img src="img/web/web_elearn.png" class="img-responsive" height="100%" width="100%">
-					<div class="sample">
-						<h3>Case study 2</h3>
-					</div>
+					<a name="#section1">
+						<div class="sample">
+							<h3>Case study 2</h3>
+							<p>eLearn Economics</p>
+							<p><small> Records and rankings</small></p>
+						</div>
+						<div class="arrow"></div>
+					</a>
 				</div><!--ENDS col-->
-				<div class="col-xs-3 test1">
+				<div class="col-xs-4 square">
 					<img src="img/web/web_timesheet.png" class="img-responsive" height="100%" width="100%">
-					<div class="sample">
-						<h3>Case study 3</h3>
-					</div>
+					<a name="#section1">
+						<div class="sample">
+							<h3>Case study 3</h3>
+							<p>Job &amp; Timesheet Manager</p>
+							<p><small> Records and rankings</small></p>
+						</div>
+						<div class="arrow"></div>
+					</a>
 				</div><!--ENDS col-->
-				<div class="col-xs-3 test2">
-					<img src="img/web/web_lacigale.png" class="img-responsive" height="100%" width="100%">
-					<div class="sample">
-						<h3>Case study 4</h3>
-					</div>
-				</div><!--ENDS col-->
+				
 
-				<div class="col-xs-3 test2">
-					<i class="fa fa-mobile"></i>
-					<div class="sample"><h3>Hello</h3></div>
+
+				<div class="col-xs-4 square">
+					<img src="img/web/web_anz.png" class="img-responsive" height="100%" width="100%">
+					<a name="#section1">
+						<div class="sample">
+							<h3>Case study 1</h3>
+							<p>Athletics New Zealand</p>
+							<p><small> Records and rankings</small></p>
+						</div>
+						<div class="arrow"></div>
+					</a>
 				</div><!--ENDS col-->
-				<div class="col-xs-3 test1">
-					<i class="fa fa-desktop"></i>
-					<div class="sample"><h3>Hello</h3></div>
+				<div class="col-xs-4 square">
+					<img src="img/web/web_elearn.png" class="img-responsive" height="100%" width="100%">
+					<a name="#section1">
+						<div class="sample">
+							<h3>Case study 2</h3>
+							<p>eLearn Economics</p>
+							<p><small> Records and rankings</small></p>
+						</div>
+						<div class="arrow"></div>
+					</a>
 				</div><!--ENDS col-->
-				<div class="col-xs-3 test2">
-					<i class="fa fa-mobile"></i>
-					<div class="sample"><h3>Hello</h3></div>
+				<div class="col-xs-4 square">
+					<img src="img/web/web_timesheet.png" class="img-responsive" height="100%" width="100%">
+					<a name="#section1">
+						<div class="sample">
+							<h3>Case study 3</h3>
+							<p>Job &amp; Timesheet Manager</p>
+							<p><small> Records and rankings</small></p>
+						</div>
+						<div class="arrow"></div>
+					</a>
 				</div><!--ENDS col-->
-				<div class="col-xs-3 test1">
-					<i class="fa fa-desktop"></i>
-					<div class="sample"><h3>Hello</h3></div>
-				</div><!--ENDS col-->
+				
 			</div><!--ENDS row-->
 		</div><!--ENDS container-->
 	</div><!--ENDS band-white-->
@@ -95,13 +124,13 @@
 
 						<div class="row">
 							<div class="col-sm-4">
-								<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 							</div><!--ENDS col-->
 							<div class="col-sm-4">
-								<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 							</div><!--ENDS col-->
 							<div class="col-sm-4">
-								<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 							</div><!--ENDS col-->
 						</div><!--ENDS row-->
 
@@ -136,7 +165,7 @@
 								<div class="slide-up"></div>
 								<a href="websites#carousel01" data-slide="next"><img src="img/web/iPhone_anz1.png" width="320" height="600" alt="..." class="center-block img-responsive"></a>
 								<div class="carousel-caption">
-									<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+									<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 								</div>
 							</div>
 
@@ -247,7 +276,7 @@
 								<div class="slide-up"></div>
 								<a href="websites#carousel02" data-slide="next"><img src="img/web/iPhone_elearn1.png" width="320" height="600" alt="..." class="center-block img-responsive"></a>
 								<div class="carousel-caption">
-									<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+									<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 								</div>
 							</div>
 
@@ -373,7 +402,7 @@
 							<div class="slide-up"></div>
 							<a href="websites#carousel03" data-slide="next"><img src="img/web/iPhone_time1.png" width="320" height="600" alt="..." class="center-block img-responsive"></a>
 							<div class="carousel-caption">
-								<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 							</div>
 						</div>
 
@@ -499,7 +528,7 @@
 							<div class="slide-up"></div>
 							<a href="websites#carousel04" data-slide="next"><img src="img/web/iPhone_lacigale1.png" width="320" height="600" alt="..." class="center-block img-responsive"></a>
 							<div class="carousel-caption">
-								<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 							</div>
 						</div>
 
@@ -625,7 +654,7 @@
 							<div class="slide-up"></div>
 							<a href="websites#carousel05" data-slide="next"><img src="img/web/iPhone_track_challenge1.png" width="320" height="600" alt="..." class="center-block img-responsive"></a>
 							<div class="carousel-caption">
-								<p><strong>HOME</strong> - displays latest site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
+								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
 							</div>
 						</div>
 

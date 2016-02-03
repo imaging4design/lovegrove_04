@@ -145,94 +145,6 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
   padding-left: 0;
   padding-right: 0;
 }
-.test1 {
-  position: relative;
-  background: #4FC1E9;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* align horizontal */
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* align vertical */
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-}
-.test1:hover .sample {
-  color: #FFF;
-  height: 100%;
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-  cursor: pointer;
-}
-.test1 .fa {
-  color: #FFF;
-  font-size: 45px;
-}
-.test2 {
-  position: relative;
-  background: #3BAFDA;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* align horizontal */
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* align vertical */
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-}
-.test2:hover .sample {
-  color: #FFF;
-  height: 100%;
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-  cursor: pointer;
-}
-.test2 .fa {
-  color: #FFF;
-  font-size: 45px;
-}
-.sample {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* align horizontal */
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* align vertical */
-  -webkit-transition: all 0.2s linear;
-          transition: all 0.2s linear;
-  overflow: hidden;
-}
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | MAIN MENU
@@ -570,6 +482,158 @@ a:focus {
 |-----------------------------------------------------------------------------------------------------------------
 |-----------------------------------------------------------------------------------------------------------------
 */
+/*
+|-----------------------------------------------------------------------------------------------------------------
+| HOVER SQUARES
+|-----------------------------------------------------------------------------------------------------------------
+*/
+.square {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  overflow: hidden;
+}
+.square:hover .sample {
+  color: #FFF;
+  height: 100%;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  cursor: pointer;
+}
+.square:hover .arrow {
+  bottom: 0;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+  cursor: pointer;
+}
+.square:nth-child(odd) {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  overflow: hidden;
+  background: #4FC1E9;
+}
+.square:nth-child(odd):hover .sample {
+  color: #FFF;
+  height: 100%;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  cursor: pointer;
+}
+.square:nth-child(odd):hover .arrow {
+  bottom: 0;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+  cursor: pointer;
+}
+.square:nth-child(even) {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  overflow: hidden;
+  background: #3BAFDA;
+}
+.square:nth-child(even):hover .sample {
+  color: #FFF;
+  height: 100%;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  cursor: pointer;
+}
+.square:nth-child(even):hover .arrow {
+  bottom: 0;
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear;
+  cursor: pointer;
+}
+.sample {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* align vertical */
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+  overflow: hidden;
+  line-height: .5;
+}
+.arrow {
+  position: absolute;
+  bottom: -50px;
+  -webkit-transition: all 0.4s linear;
+          transition: all 0.4s linear;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /*border-width: 0 50px 50px 50px;*/
+  border-color: transparent transparent #FFF transparent;
+}
 /*
 |-----------------------------------------------------------------------------------------------------------------
 | 1. HOVER FRAME

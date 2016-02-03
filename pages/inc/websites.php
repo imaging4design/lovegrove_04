@@ -10,7 +10,7 @@
 	</div><!--ENDS col-->
 	<div class="col-sm-8 outline">
 		<h4>Track &amp; Field Statistics</h4>
-		<p>Maecenas facilisis fermentum felis, sit amet egestas elit. Nulla a faucibus nulla. Vivamus hendrerit faucibus nunc, non tincidunt est dictum in. Sed id pulvinar magna, id dignissim dolor. Nullam volutpat sem ipsum. Nulla vulputate mauris nec lacus ullamcorper. <a href="#">read more ...</a> </p>
+		<p>Maecenas facilisis fermentum felis, sit amet egestas elit. Nulla a faucibus nulla. Vivamus hendrerit faucibus nunc, non tincidunt est dictum in. <a href="#">read more ...</a> </p>
 	</div><!--ENDS col-->
 	<div class="triangle"></div>
 </div><!--ENDS row-->
@@ -23,7 +23,7 @@
 	</div><!--ENDS col-->
 	<div class="col-sm-8 outline">
 		<h4>Athletics NZ Rankings</h4>
-		<p>Maecenas facilisis fermentum felis, sit amet egestas elit. Nulla a faucibus nulla. Vivamus hendrerit faucibus nunc, non tincidunt est dictum in. Sed id pulvinar magna, id dignissim dolor. Nullam volutpat sem ipsum. Nulla vulputate mauris nec lacus ullamcorper. <a href="#">read more ...</a> </p>
+		<p>Maecenas facilisis fermentum felis, sit amet egestas elit. Nulla a faucibus nulla. Vivamus hendrerit faucibus nunc, non tincidunt est dictum in. <a href="#">read more ...</a> </p>
 	</div><!--ENDS col-->
 	<div class="triangle"></div>
 </div><!--ENDS row-->
@@ -36,7 +36,7 @@
 	</div><!--ENDS col-->
 	<div class="col-sm-8 outline">
 		<h4>Job &amp; Timesheet Manager</h4>
-		<p>Maecenas facilisis fermentum felis, sit amet egestas elit. Nulla a faucibus nulla. Vivamus hendrerit faucibus nunc, non tincidunt est dictum in. Sed id pulvinar magna, id dignissim dolor. Nullam volutpat sem ipsum. Nulla vulputate mauris nec lacus ullamcorper. <a href="#">read more ...</a> </p>
+		<p>Maecenas facilisis fermentum felis, sit amet egestas elit. Nulla a faucibus nulla. Vivamus hendrerit faucibus nunc, non tincidunt est dictum in. <a href="#">read more ...</a> </p>
 	</div><!--ENDS col-->
 	<div class="triangle"></div>
 </div><!--ENDS row-->
