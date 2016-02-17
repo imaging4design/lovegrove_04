@@ -13,7 +13,6 @@
 							<p>Athletics New Zealand</p>
 							<p><small> Records and rankings</small></p>
 						</div>
-						<div class="arrow"></div>
 					</a>
 				</div><!--ENDS col-->
 				<div class="col-xs-4 square">
@@ -24,7 +23,6 @@
 							<p>eLearn Economics</p>
 							<p><small> Records and rankings</small></p>
 						</div>
-						<div class="arrow"></div>
 					</a>
 				</div><!--ENDS col-->
 				<div class="col-xs-4 square">
@@ -35,7 +33,6 @@
 							<p>Job &amp; Timesheet Manager</p>
 							<p><small> Records and rankings</small></p>
 						</div>
-						<div class="arrow"></div>
 					</a>
 				</div><!--ENDS col-->
 				
@@ -49,7 +46,6 @@
 							<p>Athletics New Zealand</p>
 							<p><small> Records and rankings</small></p>
 						</div>
-						<div class="arrow"></div>
 					</a>
 				</div><!--ENDS col-->
 				<div class="col-xs-4 square">
@@ -60,7 +56,6 @@
 							<p>eLearn Economics</p>
 							<p><small> Records and rankings</small></p>
 						</div>
-						<div class="arrow"></div>
 					</a>
 				</div><!--ENDS col-->
 				<div class="col-xs-4 square">
@@ -71,7 +66,6 @@
 							<p>Job &amp; Timesheet Manager</p>
 							<p><small> Records and rankings</small></p>
 						</div>
-						<div class="arrow"></div>
 					</a>
 				</div><!--ENDS col-->
 				
