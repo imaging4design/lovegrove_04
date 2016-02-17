@@ -113,31 +113,6 @@
 				<div class="col-md-8 screens">
 
 					<img src="img/web/web_anz.png" class="img-responsive test" style="margin:80px 0 60px 0;">
-
-					<div class="show-text">
-
-						<div class="row">
-							<div class="col-sm-4">
-								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
-							</div><!--ENDS col-->
-							<div class="col-sm-4">
-								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
-							</div><!--ENDS col-->
-							<div class="col-sm-4">
-								<p><strong>HOME</strong> - displays lasquare site statistics, news items, recent NZ records, athlete birthdays, today in history and year's performance leaders.</p>
-							</div><!--ENDS col-->
-						</div><!--ENDS row-->
-
-						<h1 class="hidden-sm hidden-xs">&nbsp;</h1>
-						<h3>Technologies used ...</h3>
-						<ul>
-							<li>CSS3</li>
-							<li>HTML5</li>
-							<li>PHP (Codeigniter)</li>
-							<li>MySQL</li>
-							<li>jQuery</li>
-						</ul>
-					</div>
 				
 				</div><!--ENDS col-->
 

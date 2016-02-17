@@ -24,7 +24,7 @@ $(document).ready(function(){
 		navbarNavListItems = $('.navbar-nav > li > a'),
 		navbarBrand = $('.navbar-brand'),
 		navbar = $('.navbar'),
-		maximum = 30,
+		maximum = 20,
 		padSmall = 15,
 		padLarge = 25;
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
 			navbarBrand.addClass('translate');
 
 		} else {
-			navbarFixedTop.css({'position': 'absolute', 'top': 30});
+			navbarFixedTop.css({'position': 'absolute', 'top': 20});
 			navbarNavListItems.css({'padding-top': padLarge, 'padding-bottom': padLarge});
 			navbarBrand.css({'padding-top': padLarge, 'padding-bottom': padLarge});
 			navbar.css({'min-height': 50});

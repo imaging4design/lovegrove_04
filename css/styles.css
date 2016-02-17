@@ -111,10 +111,10 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
 .masthead-thin {
   position: relative;
   font-size: 13px;
-  line-height: 2.3;
+  line-height: 1.5;
   color: #FFF;
   background: #000;
-  height: 30px;
+  height: 20px;
   text-transform: uppercase;
   z-index: 21;
 }
@@ -161,7 +161,7 @@ ul.nav.navbar-nav li.graphics:hover > .home-graphics {
 }
 .navbar-fixed-top {
   position: absolute;
-  top: 30px;
+  top: 20px;
   border-width: 0px 0px 3px;
   z-index: 20;
 }
@@ -709,39 +709,6 @@ a:focus {
 | 2. ANIMATING CAROUSEL
 |-----------------------------------------------------------------------------------------------------------------
 */
-.screens {
-  position: relative;
-  cursor: pointer;
-}
-.show-text {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 60px;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 0;
-  opacity: 0;
-  -webkit-transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-          transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-  overflow: hidden;
-}
-.screens:hover .show-text {
-  color: #FFF;
-  opacity: 1;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-.screens:hover img.test {
-  opacity: 0.4;
-  -webkit-transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-          transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-img {
-  -webkit-transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-          transition: all 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
 .carousel.slide {
   margin: 0 auto;
   padding: 35px 0;
